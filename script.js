@@ -2,8 +2,8 @@
  Scrivi un algoritmo per trovare il più grande tra due numeri interi.
 */
 
-const num1 = 2;
-const num2 = 3;
+let num1 = 2;
+let num2 = 3;
 
 if (num1 > num2) {
   console.log("Il numero più grande è:", num1);
@@ -11,29 +11,42 @@ if (num1 > num2) {
   console.log("Il numero più grande è:", num2);
 }
 
+//_______________________________________________________________________________________________________________________
+
 /* ESERCIZIO 2
   Scrivi un algoritmo che mostri "not equal" in console se un numero intero fornito è diverso da 5.
 */
 
-const mynum = prompt("Inserisci il tuo numero:");
+let mynum = Number(prompt("Inserisci il tuo numero:"));
 
-if (mynum !== "5") {
+if (mynum !== 5) {
   console.log("not equal");
 } else {
   console.log("equal");
 }
 
+//_______________________________________________________________________________________________________________________
+
 /* ESERCIZIO 3
   Scrivi un algoritmo che mostri "divisibile per 5" in console se un numero fornito è perfettamente divisibile per 5 (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+mynum = Number(prompt("Inserisci il tuo numero:"));
+if (mynum % 5 === 0) {
+  console.log("divisibile per 5");
+} else {
+  console.log("not divisible per 5");
+}
+
+//_______________________________________________________________________________________________________________________
 
 /* ESERCIZIO 4
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+//_______________________________________________________________________________________________________________________
 
 /* ESERCIZIO 5
   Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
@@ -43,12 +56,16 @@ if (mynum !== "5") {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+//_______________________________________________________________________________________________________________________
+
 /* ESERCIZIO 6
   Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+//_______________________________________________________________________________________________________________________
 
 /* ESERCIZIO 7
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
@@ -58,17 +75,23 @@ if (mynum !== "5") {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+//_______________________________________________________________________________________________________________________
+
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+//_______________________________________________________________________________________________________________________
+
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+//_______________________________________________________________________________________________________________________
 
 /* ESERCIZIO 10
   Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
@@ -84,6 +107,8 @@ if (mynum !== "5") {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+//_______________________________________________________________________________________________________________________
+
 /* ESERCIZIO 11
   Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
 */
@@ -96,11 +121,15 @@ const me = {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+//_______________________________________________________________________________________________________________________
+
 /* ESERCIZIO 12
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+//_______________________________________________________________________________________________________________________
 
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
@@ -108,14 +137,20 @@ const me = {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+//_______________________________________________________________________________________________________________________
+
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+//_______________________________________________________________________________________________________________________
+
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+//_______________________________________________________________________________________________________________________
