@@ -15,7 +15,13 @@ if (num1 > num2) {
   Scrivi un algoritmo che mostri "not equal" in console se un numero intero fornito è diverso da 5.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+const mynum = prompt("Inserisci il tuo numero:");
+
+if (mynum !== "5") {
+  console.log("not equal");
+} else {
+  console.log("equal");
+}
 
 /* ESERCIZIO 3
   Scrivi un algoritmo che mostri "divisibile per 5" in console se un numero fornito è perfettamente divisibile per 5 (suggerimento: cerca l'operatore modulo su un motore di ricerca)
