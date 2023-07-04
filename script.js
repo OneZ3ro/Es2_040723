@@ -325,7 +325,7 @@ if (myVar1 > myVar2 && myVar1 > myVar3 && myVar2 > myVar3) {
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
 
-/**/
+/*
 const myVar4 = 10;
 
 if (typeof myVar4 === "number") {
@@ -333,6 +333,7 @@ if (typeof myVar4 === "number") {
 } else {
   console.log("Il mio valore NON è un numero");
 }
+*/
 
 //_______________________________________________________________________________________________________________________
 
@@ -340,7 +341,14 @@ if (typeof myVar4 === "number") {
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/**/
+const myVar5 = Math.floor(Math.random() * 101);
+
+if (myVar5 % 2 === 0) {
+  console.log(`${myVar5} è un numero pari`);
+} else {
+  console.log(`${myVar5} NON è un numero pari`);
+}
 
 //_______________________________________________________________________________________________________________________
 
