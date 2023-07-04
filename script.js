@@ -412,7 +412,9 @@ console.log(me);
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/**/
+me.skills.pop();
+console.log(me);
 
 //_______________________________________________________________________________________________________________________
 
