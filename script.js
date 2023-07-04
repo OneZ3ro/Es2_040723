@@ -381,53 +381,54 @@ if (val < 5) {
 */
 
 //_______________________________________________________________________________________________________________________
+/* Togliere commento qua e alla riga 412 per vedere es 11 - 12 - 13
+  // ESERCIZIO 11
+  // Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
 
-/* ESERCIZIO 11
-  Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
-*/
+  const me = {
+    name: "John",
+    lastName: "Doe",
+    skills: ["javascript", "html", "css"],
+  };
 
-const me = {
-  name: "John",
-  lastName: "Doe",
-  skills: ["javascript", "html", "css"],
-};
+  me.city = "Toronto";
+  console.log(me);
 
-/**/
-me.city = "Toronto";
-console.log(me);
+  //_______________________________________________________________________________________________________________________
 
-//_______________________________________________________________________________________________________________________
+  // ESERCIZIO 12
+  // Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
 
-/* ESERCIZIO 12
-  Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
-*/
+  delete me.lastName;
+  console.log(me);
 
-/**/
-delete me.lastName;
-console.log(me);
+  //_______________________________________________________________________________________________________________________
 
-//_______________________________________________________________________________________________________________________
+  // ESERCIZIO 13
+  // Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 
-/* ESERCIZIO 13
-  Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
-*/
-
-/**/
-me.skills.pop();
-console.log(me);
+  me.skills.pop();
+  console.log(me);
+  // Togliere commento qua e alla riga 384 per vedere es 11 - 12 - 13*/
 
 //_______________________________________________________________________________________________________________________
 
 /* ESERCIZIO 14
-  Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
+Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/**/
+const myArr = [];
 
+for (let i = 1; i <= 10; i++) {
+  myArr.push(i);
+}
+
+console.log(myArr);
 //_______________________________________________________________________________________________________________________
 
 /* ESERCIZIO 15
-  Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
+Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
