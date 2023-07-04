@@ -76,7 +76,8 @@ if (
   Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
 */
 
-/**/
+/*
+//primo metodo
 let totalShoppingCart = Number(prompt("Inserisci il totale: "));
 let totale = totalShoppingCart;
 
@@ -85,6 +86,83 @@ if (totalShoppingCart >= 50) {
 } else {
   totale = totale + 10;
   console.log("L'ammontare totale è:", totale);
+}
+*/
+
+//secondo metodo
+const carrello = [];
+let totalShoppingCart = null;
+
+const item1 = {
+  nome: "Monopattino elettrico",
+  price: 245.99,
+};
+const item2 = {
+  nome: "Libro di Chimica",
+  price: 23.85,
+};
+const item3 = {
+  nome: "Lampada",
+  price: 12.95,
+};
+const item4 = {
+  nome: "Pupazzo di John Wick",
+  price: 5,
+};
+const item5 = {
+  nome: "Surprise box",
+  price: 35.27,
+};
+
+let answ1 = prompt(
+  `${item1.nome}, prezzo: ${item1.price}€. \nVuoi aggiungerlo al carrello? (Scrivi Si o No)`
+).toLowerCase();
+let answ2 = prompt(
+  `${item2.nome}, prezzo: ${item2.price}€. \nVuoi aggiungerlo al carrello? (Scrivi Si o No)`
+).toLowerCase();
+let answ3 = prompt(
+  `${item3.nome}, prezzo: ${item3.price}€. \nVuoi aggiungerlo al carrello? (Scrivi Si o No)`
+).toLowerCase();
+let answ4 = prompt(
+  `${item4.nome}, prezzo: ${item4.price}€. \nVuoi aggiungerlo al carrello? (Scrivi Si o No)`
+).toLowerCase();
+let answ5 = prompt(
+  `${item5.nome}, prezzo: ${item5.price}€. \nVuoi aggiungerlo al carrello? (Scrivi Si o No)`
+).toLowerCase();
+
+if (answ1 === "si" || answ1 === "yes") {
+  carrello.push(item1);
+  totalShoppingCart = totalShoppingCart + item1.price;
+}
+
+if (answ2 === "si" || answ2 === "yes") {
+  carrello.push(item2);
+  totalShoppingCart = totalShoppingCart + item2.price;
+}
+
+if (answ3 === "si" || answ3 === "yes") {
+  carrello.push(item3);
+  totalShoppingCart = totalShoppingCart + item3.price;
+}
+
+if (answ4 === "si" || answ4 === "yes") {
+  carrello.push(item4);
+  totalShoppingCart = totalShoppingCart + item4.price;
+}
+
+if (answ5 === "si" || answ5 === "yes") {
+  carrello.push(item5);
+  totalShoppingCart = totalShoppingCart + item5.price;
+}
+
+if (totalShoppingCart >= 50) {
+  console.log(`Il totale è: ${totalShoppingCart}€`);
+} else {
+  console.log(
+    `Il totale senza il costo di spedizione è: ${totalShoppingCart}€`
+  );
+  totalShoppingCart = totalShoppingCart + 10;
+  console.log(`Il totale con il costo di spedizione è: ${totalShoppingCart}€`);
 }
 
 //_______________________________________________________________________________________________________________________
