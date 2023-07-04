@@ -431,6 +431,8 @@ console.log(myArr);
 Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/**/
+myArr[myArr.length - 1] = 100;
+console.log(myArr);
 
 //_______________________________________________________________________________________________________________________
