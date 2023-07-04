@@ -341,7 +341,7 @@ if (typeof myVar4 === "number") {
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
 
-/**/
+/*
 const myVar5 = Math.floor(Math.random() * 101);
 
 if (myVar5 % 2 === 0) {
@@ -349,22 +349,35 @@ if (myVar5 % 2 === 0) {
 } else {
   console.log(`${myVar5} NON è un numero pari`);
 }
+*/
 
 //_______________________________________________________________________________________________________________________
 
 /* ESERCIZIO 10
   Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
-  let val = 7
-  if (val < 10) {
-      console.log("Meno di 10");
-    } else if (val < 5) {
-      console.log("Meno di 5");
-    } else {
-      console.log("Uguale a 10 o maggiore");
-    }
+
+let val = 7;
+
+if (val < 10) {
+  console.log("Meno di 10");
+} else if (val < 5) {
+  console.log("Meno di 5");
+} else {
+  console.log("Uguale a 10 o maggiore");
+}
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/**/
+let val = 4;
+
+//ho messo prima il val < 5 se no non avrei mai potuto vedere questa situazione, poiché val < 10 includeva quella condizione
+if (val < 5) {
+  console.log("Meno di 5");
+} else if (val < 10) {
+  console.log("Meno di 10");
+} else {
+  console.log("Uguale a 10 o maggiore");
+}
 
 //_______________________________________________________________________________________________________________________
 
