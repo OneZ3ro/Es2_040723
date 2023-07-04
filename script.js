@@ -174,7 +174,7 @@ if (totalShoppingCart >= 50) {
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
 */
 
-/**/
+/*
 const carrello = [];
 let totalShoppingCart = null;
 
@@ -267,6 +267,7 @@ if (totalShoppingCart >= 50) {
     `Il totale con il costo di spedizione è: ${totalShoppingCart.toFixed(2)}€`
   );
 }
+*/
 
 //_______________________________________________________________________________________________________________________
 
@@ -276,7 +277,46 @@ if (totalShoppingCart >= 50) {
   Alla fine mostra il risultato in console.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/**/
+const myVar1 = Math.floor(Math.random() * 101);
+const myVar2 = Math.floor(Math.random() * 101);
+const myVar3 = Math.floor(Math.random() * 101);
+
+/*
+if (myVar1 > myVar2 && myVar1 > myVar3) {
+  console.log(`${myVar1} è più grande di ${myVar2} e ${myVar3}`);
+} else if (myVar2 > myVar1 && myVar2 > myVar3) {
+  console.log(`${myVar2} è più grande di ${myVar1} e ${myVar3}`);
+} else {
+  console.log(`${myVar3} è più grande di ${myVar1} e ${myVar2}`);
+}
+*/
+
+if (myVar1 > myVar2 && myVar1 > myVar3 && myVar2 > myVar3) {
+  console.log(
+    `${myVar1} è più grande di ${myVar2} che è più grande di ${myVar3}`
+  );
+} else if (myVar1 > myVar2 && myVar1 > myVar3 && myVar3 > myVar2) {
+  console.log(
+    `${myVar1} è più grande di ${myVar3} che è più grande di ${myVar2}`
+  );
+} else if (myVar2 > myVar1 && myVar2 > myVar3 && myVar1 > myVar3) {
+  console.log(
+    `${myVar2} è più grande di ${myVar1} che è più grande di ${myVar3}`
+  );
+} else if (myVar2 > myVar1 && myVar2 > myVar3 && myVar3 > myVar1) {
+  console.log(
+    `${myVar2} è più grande di ${myVar3} che è più grande di ${myVar1}`
+  );
+} else if (myVar3 > myVar1 && myVar3 > myVar2 && myVar1 > myVar2) {
+  console.log(
+    `${myVar3} è più grande di ${myVar1} che è più grande di ${myVar2}`
+  );
+} else if (myVar3 > myVar1 && myVar3 > myVar2 && myVar2 > myVar1) {
+  console.log(
+    `${myVar3} è più grande di ${myVar2} che è più grande di ${myVar1}`
+  );
+}
 
 //_______________________________________________________________________________________________________________________
 
