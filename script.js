@@ -277,20 +277,20 @@ if (totalShoppingCart >= 50) {
   Alla fine mostra il risultato in console.
 */
 
-/**/
+/*
 const myVar1 = Math.floor(Math.random() * 101);
 const myVar2 = Math.floor(Math.random() * 101);
 const myVar3 = Math.floor(Math.random() * 101);
 
-/*
-if (myVar1 > myVar2 && myVar1 > myVar3) {
-  console.log(`${myVar1} è più grande di ${myVar2} e ${myVar3}`);
-} else if (myVar2 > myVar1 && myVar2 > myVar3) {
-  console.log(`${myVar2} è più grande di ${myVar1} e ${myVar3}`);
-} else {
-  console.log(`${myVar3} è più grande di ${myVar1} e ${myVar2}`);
-}
-*/
+
+// if (myVar1 > myVar2 && myVar1 > myVar3) {
+//   console.log(`${myVar1} è più grande di ${myVar2} e ${myVar3}`);
+// } else if (myVar2 > myVar1 && myVar2 > myVar3) {
+//   console.log(`${myVar2} è più grande di ${myVar1} e ${myVar3}`);
+// } else {
+//   console.log(`${myVar3} è più grande di ${myVar1} e ${myVar2}`);
+// }
+
 
 if (myVar1 > myVar2 && myVar1 > myVar3 && myVar2 > myVar3) {
   console.log(
@@ -317,6 +317,7 @@ if (myVar1 > myVar2 && myVar1 > myVar3 && myVar2 > myVar3) {
     `${myVar3} è più grande di ${myVar2} che è più grande di ${myVar1}`
   );
 }
+*/
 
 //_______________________________________________________________________________________________________________________
 
@@ -324,7 +325,14 @@ if (myVar1 > myVar2 && myVar1 > myVar3 && myVar2 > myVar3) {
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/**/
+const myVar4 = 10;
+
+if (typeof myVar4 === "number") {
+  console.log("Il mio valore è un numero");
+} else {
+  console.log("Il mio valore NON è un numero");
+}
 
 //_______________________________________________________________________________________________________________________
 
