@@ -90,6 +90,7 @@ if (totalShoppingCart >= 50) {
 */
 
 //secondo metodo
+/*
 const carrello = [];
 let totalShoppingCart = null;
 
@@ -164,6 +165,7 @@ if (totalShoppingCart >= 50) {
   totalShoppingCart = totalShoppingCart + 10;
   console.log(`Il totale con il costo di spedizione è: ${totalShoppingCart}€`);
 }
+*/
 
 //_______________________________________________________________________________________________________________________
 
@@ -172,7 +174,99 @@ if (totalShoppingCart >= 50) {
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/**/
+const carrello = [];
+let totalShoppingCart = null;
+
+const item1 = {
+  nome: "Monopattino elettrico",
+  price: 245.99,
+};
+const item2 = {
+  nome: "Libro di Chimica",
+  price: 23.85,
+};
+const item3 = {
+  nome: "Lampada",
+  price: 12.95,
+};
+const item4 = {
+  nome: "Pupazzo di John Wick",
+  price: 5,
+};
+const item5 = {
+  nome: "Surprise box",
+  price: 35.27,
+};
+
+alert("BIG NEWS!! TODAY IS BLACK FRIDAY!! EVERYTHING IS 20% OFF!!");
+
+let answ1 = prompt(
+  `${item1.nome}. Prezzo pieno: ${item1.price}€\n               OGGI A SOLI ${(
+    item1.price * 0.8
+  ).toFixed(2)}€!!\nVuoi aggiungerlo al carrello? (Scrivi Si o No)`
+).toLowerCase();
+
+let answ2 = prompt(
+  `${item2.nome}. Prezzo pieno: ${item2.price}€\n               OGGI A SOLI ${(
+    item2.price * 0.8
+  ).toFixed(2)}€!!\nVuoi aggiungerlo al carrello? (Scrivi Si o No)`
+).toLowerCase();
+
+let answ3 = prompt(
+  `${item3.nome}. Prezzo pieno: ${item3.price}€\n               OGGI A SOLI ${(
+    item3.price * 0.8
+  ).toFixed(2)}€!!\nVuoi aggiungerlo al carrello? (Scrivi Si o No)`
+).toLowerCase();
+
+let answ4 = prompt(
+  `${item4.nome}. Prezzo pieno: ${item4.price}€\n               OGGI A SOLI ${(
+    item4.price * 0.8
+  ).toFixed(2)}€!!\nVuoi aggiungerlo al carrello? (Scrivi Si o No)`
+).toLowerCase();
+
+let answ5 = prompt(
+  `${item5.nome}. Prezzo pieno: ${item5.price}€\n               OGGI A SOLI ${(
+    item5.price * 0.8
+  ).toFixed(2)}€!!\nVuoi aggiungerlo al carrello? (Scrivi Si o No)`
+).toLowerCase();
+
+if (answ1 === "si" || answ1 === "yes") {
+  carrello.push(item1);
+  totalShoppingCart = totalShoppingCart + item1.price * 0.8;
+}
+
+if (answ2 === "si" || answ2 === "yes") {
+  carrello.push(item2);
+  totalShoppingCart = totalShoppingCart + item2.price * 0.8;
+}
+
+if (answ3 === "si" || answ3 === "yes") {
+  carrello.push(item3);
+  totalShoppingCart = totalShoppingCart + item3.price * 0.8;
+}
+
+if (answ4 === "si" || answ4 === "yes") {
+  carrello.push(item4);
+  totalShoppingCart = totalShoppingCart + item4.price * 0.8;
+}
+
+if (answ5 === "si" || answ5 === "yes") {
+  carrello.push(item5);
+  totalShoppingCart = totalShoppingCart + item5.price * 0.8;
+}
+
+if (totalShoppingCart >= 50) {
+  console.log(`Il totale è: ${totalShoppingCart.toFixed(2)}€`);
+} else {
+  console.log(
+    `Il totale senza il costo di spedizione è: ${totalShoppingCart.toFixed(2)}€`
+  );
+  totalShoppingCart = totalShoppingCart + 10;
+  console.log(
+    `Il totale con il costo di spedizione è: ${totalShoppingCart.toFixed(2)}€`
+  );
+}
 
 //_______________________________________________________________________________________________________________________
 
