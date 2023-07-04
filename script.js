@@ -2,6 +2,7 @@
  Scrivi un algoritmo per trovare il più grande tra due numeri interi.
 */
 
+/*
 let num1 = 2;
 let num2 = 3;
 
@@ -10,6 +11,7 @@ if (num1 > num2) {
 } else {
   console.log("Il numero più grande è:", num2);
 }
+*/
 
 //_______________________________________________________________________________________________________________________
 
@@ -17,6 +19,7 @@ if (num1 > num2) {
   Scrivi un algoritmo che mostri "not equal" in console se un numero intero fornito è diverso da 5.
 */
 
+/*
 let mynum = Number(prompt("Inserisci il tuo numero:"));
 
 if (mynum !== 5) {
@@ -24,6 +27,7 @@ if (mynum !== 5) {
 } else {
   console.log("equal");
 }
+*/
 
 //_______________________________________________________________________________________________________________________
 
@@ -31,12 +35,14 @@ if (mynum !== 5) {
   Scrivi un algoritmo che mostri "divisibile per 5" in console se un numero fornito è perfettamente divisibile per 5 (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
 
+/*
 mynum = Number(prompt("Inserisci il tuo numero:"));
 if (mynum % 5 === 0) {
   console.log("divisibile per 5");
 } else {
   console.log("not divisible per 5");
 }
+*/
 
 //_______________________________________________________________________________________________________________________
 
@@ -44,7 +50,21 @@ if (mynum % 5 === 0) {
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+num1 = Number(prompt("Inserisci il tuo primo numero:"));
+num2 = Number(prompt("Inserisci il tuo secondo numero:"));
+let valore = 8;
+
+if (
+  num1 === valore ||
+  num2 === valore ||
+  num1 + num2 === valore ||
+  Math.abs(num1 - num2) === valore ||
+  Math.abs(num2 - num1) === valore
+) {
+  console.log("Il valore è:", valore);
+} else {
+  console.log("Il valore NON è:", valore);
+}
 
 //_______________________________________________________________________________________________________________________
 
