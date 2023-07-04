@@ -367,7 +367,7 @@ if (val < 10) {
 }
 */
 
-/**/
+/*
 let val = 4;
 
 //ho messo prima il val < 5 se no non avrei mai potuto vedere questa situazione, poiché val < 10 includeva quella condizione
@@ -378,6 +378,7 @@ if (val < 5) {
 } else {
   console.log("Uguale a 10 o maggiore");
 }
+*/
 
 //_______________________________________________________________________________________________________________________
 
@@ -391,7 +392,9 @@ const me = {
   skills: ["javascript", "html", "css"],
 };
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/**/
+me.city = "Toronto";
+console.log(me);
 
 //_______________________________________________________________________________________________________________________
 
