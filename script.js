@@ -50,6 +50,7 @@ if (mynum % 5 === 0) {
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
 */
 
+/*
 num1 = Number(prompt("Inserisci il tuo primo numero:"));
 num2 = Number(prompt("Inserisci il tuo secondo numero:"));
 let valore = 8;
@@ -65,6 +66,7 @@ if (
 } else {
   console.log("Il valore NON è:", valore);
 }
+*/
 
 //_______________________________________________________________________________________________________________________
 
@@ -74,7 +76,16 @@ if (
   Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/**/
+let totalShoppingCart = Number(prompt("Inserisci il totale: "));
+let totale = totalShoppingCart;
+
+if (totalShoppingCart >= 50) {
+  console.log("L'ammontare totale è:", totale);
+} else {
+  totale = totale + 10;
+  console.log("L'ammontare totale è:", totale);
+}
 
 //_______________________________________________________________________________________________________________________
 
